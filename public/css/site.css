@@ -65,15 +65,16 @@ border-radius: 4px;
 }
 
 div.footer {
-  margin: 2em;
+  margin: 1em 0;
 }
 
 div.footer ul {
   list-style-type: none;
+  margin: 0;
 }
 
 div.footer ul li {
-  margin: 0 4px;
+  margin-right: 10px;
   display: inline;
   float: left;
 }
