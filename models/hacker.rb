@@ -25,16 +25,16 @@ class Hacker
 
   #after we create a hacker, we want to have them follow steve, and vice versa!
   after_create :follow_steve
-  
+
   # We need to generate a slug so that we can have a proper URL for our hacker
   before_create :generate_slug
 
   #we don't want to store the password (or the confirmation), so we just make an accessor
   attr_accessor :password, :password_confirmation
 
-  # This method sets our password. The first thign we need to get a 'salt'. You 
+  # This method sets our password. The first thign we need to get a 'salt'. You
   # can read about salts [here](http://en.wikipedia.org/wiki/Salt_(cryptography\)).
-  # basically, we combine the password with the salt, and then encrypt it, and 
+  # basically, we combine the password with the salt, and then encrypt it, and
   # store that in the database.
   #
   # The reason that we do this is because we don't want to keep someone's
