@@ -73,6 +73,9 @@ GEM
       gherkin (~> 2.5.0)
       json (>= 1.4.6)
       term-ansicolor (>= 1.0.6)
+    cucumber-api-steps (0.4)
+      cucumber (>= 0.8.3)
+      jsonpath (>= 0.1.2)
     cucumber-rails (1.1.1)
       capybara (>= 1.1.1)
       cucumber (>= 1.1.0)
@@ -111,6 +114,8 @@ GEM
       thor (~> 0.14)
     json (1.6.1)
     json_pure (1.6.1)
+    jsonpath (0.4.2)
+      multi_json
     kgio (2.6.0)
     mail (2.3.0)
       i18n (>= 0.4.0)
@@ -233,6 +238,7 @@ DEPENDENCIES
   bson_ext
   cancan
   coffee-rails (~> 3.1.0)
+  cucumber-api-steps
   cucumber-rails
   database_cleaner
   devise (>= 1.2)
